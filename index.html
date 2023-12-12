@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Websiders</title>
+    <!--Icone de l'onglet-->
+    <link rel="shortcut icon" href="Images\icons8-domaine-94.png">
+</head>
+<body>
+    <header>
+        <A href="index.html" class="logo"><span>Web</span>siders</A>
+        <div class="menutoggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+            <li><a href="#offres" onclick="toggleMenu();">Nos offres</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <a href="Connexion.html" class="btn-reserve" onclick="toggleMenu();">Connexion</a>
+        </ul>
+    </header>
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2>Découvrez une expérience exceptionnelle</h2>
+            <p>Ensemble, nous pouvons bâtir une présence en ligne remarquable et percutante qui propulsera nos clients vers de nouveaux sommets.</p>
+            <a href="#offres" onclick="toggleMenu();" class="btn1">Nos offres</a>
+            <a href="Connexion.html" class="btn2">Connexion</a>
+        </div>
+    </section>
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texteL">A propos de nous</h2>
+                <p class="titre-texte"> Nous sommes une équipe de jeunes passionnés, résolus à apporter notre expertise dans le domaine du marketing digital pour aider nos clients à surmonter tous leurs défis.
+                    Notre mission est simple mais puissante : nous voulons être là pour nos clients à chaque étape de leur parcours, en leur offrant des solutions personnalisées qui maximiseront leur succès sur le marché numérique.</p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                <img src="Images/graphique-graphique-numerique-colore-marche-boursier-ai-generative_438099-19679.avif" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offres" id="offres">
+        <div class="titre">
+            <h2 class="titre-texteL2">Nos offres</h2>
+            <p class="titre-texte">Nous avons 4 offres pour vous !</p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img class="img" src="Images\pas-dargent (2).png" alt="">
+                </div>
+                <div class="text">
+                    <h3 class="bus">Contenu Gratuit</h3>
+                </div>
+            </div>
+         <div class="box">
+            <div class="imbox">
+                <img class="img" src="Images\pouce-en-lair.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="bus" >Contenu Commerçant</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img class="img" src="Images\revenu.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="bus">Contenu Expert</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img class="img" src="Images\riches.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="bus">Contenu Pro</h3>
+            </div>
+        </div>
+ </div>
+ <div class="titre">
+    <a href="détails.html" class="btn1">Voir les détails</a>
+ </div>
+</section>
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-texteL"><span>C</span>ontact</h2>
+        <p class="titre-texte"> N'hésitez pas à nous contacter par e-mail à l'adresse Websiders1@gmail.com. Nous sommes impatients de discuter de vos besoins spécifiques. Envoyez-nous un e-mail ou suivez-nous sur vos plateformes préférées pour rester connecté(e) et obtenir les dernières actualités du monde du marketing digital. À très bientôt !</p>
+        <p class="sti">L'équipe de Websiders</p>
+    </div>
+    <div class="contactForm">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputboite">
+        <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>Copyright 2023 <a href="#">Websiders</a> Tous droits réservés</p>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const tmenutoggle = document.querySelector('.menutoggle');
+        const navbar = document.querySelector('.navbar');
+        menutoggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
